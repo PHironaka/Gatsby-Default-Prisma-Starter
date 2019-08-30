@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 const Index = ({ data: { prismicBlogPost } }) => (
   <Layout>
     <SEO
-      title={prismicBlogPost.data.title.text}
+      title="Index"
     />
     <Link to={prismicBlogPost.slugs}><h1>{prismicBlogPost.data.title.text}</h1></Link>
   </Layout>

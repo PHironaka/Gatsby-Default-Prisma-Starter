@@ -7,7 +7,7 @@ module.exports = {
     title: `PH Prismic Starter`,
     description: `Prismic Starter.`,
     author: `Peter Hironaka`,
-    siteUrl: `https://gatsby-prismic-ph-starter.netlify.com`,
+    siteUrl: `https://prisma-ph-gatsby-starter.netlify.com`,
   },
 
   plugins: [
