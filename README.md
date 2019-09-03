@@ -10,6 +10,18 @@ Features Included:
 - Prismic CMS
 - Styled Components
 - Search
+- Netlify for hosting
+
+## Install 
+
+1. Start New Gatsby Project
+``` 
+Gatsby New https://github.com/PHironaka/Gatsby-Default-Prisma-Starter 
+```
+2. Install dependencies
+``` 
+yarn
+```
 
 
 ## Project Scaffold
