@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `PH Prismic Starter`,
-    description: `Prismic Starter.`,
+    title: `Prismic Skeleton Starter`,
+    description: `Bare bones skeleton Gatsby Starter`,
     author: `Peter Hironaka`,
     siteUrl: `https://prisma-ph-gatsby-starter.netlify.com`,
   },
@@ -61,18 +61,15 @@ module.exports = {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
         // Fields to index
-        fields: [`title`],
+        fields: [`title`, `path`],
         // How to resolve each field`s value for a supported node type
         resolvers: {
-          // For any node of type MarkdownRemark, list how to resolve the fields` values
-          prismicBlogPost: {
+          PrismicBlogPost: {
             title: node => node.data.title,
-            path: node => node.data.slug,
+            path: node => node.data.link,
           },
         },
-        // Optional filter to limit indexed nodes
-        filter: (node, getNode) =>
-          node.frontmatter.tags !== 'exempt',
+       
       },
     },
   

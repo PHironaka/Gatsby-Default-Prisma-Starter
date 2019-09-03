@@ -2,6 +2,21 @@ import React from "react"
 import { StaticQuery, Link } from "gatsby"
 import { graphql } from "gatsby"
 import Search from "./search"
+import styled from "styled-components"
+
+const HeaderContent = styled.header`
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  grid-gap:1em;
+  margin-bottom:2em;
+`
+
+const HeaderNav = styled.div`
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap:1em;
+  justify-items:right;
+`
 
 const Header = () => (
   <StaticQuery
@@ -14,34 +29,26 @@ const Header = () => (
     `}
     render={data => (
  
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+  <HeaderContent
+    
   >
-            <Search searchIndex={data.siteSearchIndex.index} />
 
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+   
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
-            color: `white`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          Prisma Skeleton Starter
         </Link>
       </h1>
-    </div>
-  </header>
+      <HeaderNav>
+        <Search searchIndex={data.siteSearchIndex.index} />
+        <Link to="/about">About</Link>
+      </HeaderNav>
+  </HeaderContent>
     )}
     />
   )
