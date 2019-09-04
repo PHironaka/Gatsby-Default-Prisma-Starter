@@ -82,7 +82,6 @@ module.exports = {
         background_color: `#000`,
         theme_color: `#000`,
         display: `standalone`,
-        icon: `src/images/pete-icon.png`, // This path is relative to the root of the site.
         icons: [
           {
             src: `../assets/android-chrome-192x192.png`,
