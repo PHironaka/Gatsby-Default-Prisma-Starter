@@ -1,7 +1,13 @@
 import React, { Component } from "react"
 import { Index } from "elasticlunr"
 import {  Link } from "gatsby"
+import styled from "styled-components"
 
+const SearchItems = styled.ul`
+  list-style:none;
+  margin:1em 0;
+  padding:0;
+`
 // Search component
 export default class Search extends Component {
   constructor(props) {
@@ -16,13 +22,13 @@ export default class Search extends Component {
     return (
       <div>
         <input type="text" placeholder="Search Articles" value={this.state.query} onChange={this.search} />
-        <ul>
+        <SearchItems>
           {this.state.results.map(page => (
             <li key={page.id}>
               <Link to={"/" + page.path}>{page.title.text}</Link>
             </li>
           ))}
-        </ul>
+        </SearchItems>
       </div>
     )
   }

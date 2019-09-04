@@ -15,7 +15,6 @@ const HeaderNav = styled.div`
   display:grid;
   grid-template-columns:1fr 1fr;
   grid-gap:1em;
-  justify-items:right;
 `
 
 const Header = () => (
