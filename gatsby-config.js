@@ -85,12 +85,12 @@ module.exports = {
         icon: `src/images/pete-icon.png`, // This path is relative to the root of the site.
         icons: [
           {
-            src: `../images/android-chrome-192x192.png`,
+            src: `../assets/android-chrome-192x192.png`,
             sizes: `192x192`,
             type: `image/png`,
           },
           {
-            src: `../images/android-chrome-512x512.png`,
+            src: `../assets/android-chrome-512x512.png`,
             sizes: `512x512`,
             type: `image/png`,
           },
