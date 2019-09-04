@@ -9,6 +9,10 @@ const PostGrid = styled.div`
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
   grid-gap:2em;
+
+  @media screen and (max-width: 800px) {
+	  display:block;
+  }
 `
 
 const Index = ({ data: { allPrismicBlogPost } }) => (
