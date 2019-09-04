@@ -76,7 +76,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter`,
+        name: `Prisma Skeleton Starter`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#000`,
