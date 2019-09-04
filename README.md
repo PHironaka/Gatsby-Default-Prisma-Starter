@@ -16,12 +16,13 @@ Features Included:
 
 1. Start New Gatsby Project
 ``` 
-Gatsby New https://github.com/PHironaka/Gatsby-Default-Prisma-Starter 
+gatsby New https://github.com/PHironaka/Gatsby-Default-Prisma-Starter 
 ```
 2. Install dependencies
 ``` 
 yarn
 ```
+3. Assuming you have signed up for a Prismic Account, you need to create a new prismic repo. Once created, click into Settings in the bottom left of the screen. From Settings, select API & Security and fill out the Application Name. The callback URL can be left blank. Once you've entered the name, select Add This Application. 
 
 
 ## Project Scaffold
